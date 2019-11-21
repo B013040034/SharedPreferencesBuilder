@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.kingwaytek.sharepreferencebuilder.model.IotData
-import com.kingwaytek.sharepreferencebuilder.util.Editor
-import com.kingwaytek.sharepreferencebuilder.util.PrefBuilder
+import com.kingwaytek.sharepreferencesbuilder.PrefBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,28 +16,6 @@ class MainActivity : AppCompatActivity() {
         PrefBuilder(Editor, this).build()
         PrefBuilder(Editor, this).build()
         PrefBuilder(Editor, this).build()
-/*
-        /** Int */
-        //get
-        Editor.books.value
-        //set
-        Editor.books.value = 87
-
-        /** String */
-        //get
-        var name = Editor.firstName.value
-        //set
-        Editor.firstName.value = "CHAO HUNG"
-
-        /** Boolean */
-        //get
-        var isSetup = Editor.isSetUp.value
-        Editor.isSetUp.value = true*/
-
-
-
-
-
         //int
         Log.d("int", Editor.books.value.toString())
         Editor.books.value = 87

@@ -1,7 +1,11 @@
-package com.kingwaytek.sharepreferencebuilder.util
+package com.kingwaytek.sharepreferencebuilder
 
 import android.annotation.SuppressLint
 import com.kingwaytek.sharepreferencebuilder.model.IotData
+import com.kingwaytek.sharepreferencesbuilder.Pref
+import com.kingwaytek.sharepreferencesbuilder.PrefDefaultInt
+import com.kingwaytek.sharepreferencesbuilder.PrefDefaultString
+import com.kingwaytek.sharepreferencesbuilder.PrefName
 
 @SuppressLint("StaticFieldLeak")
 object Editor {
@@ -16,12 +20,6 @@ object Editor {
     @PrefName("FIRST_NAME")
     lateinit var firstName: Pref.String
 
-    var changeText: String
-        get() = lastName.value
-        set(value) {
-            lastName.value = value + "123"
-        }
-
     @PrefName("LASTNAME")
     @PrefDefaultString("--")
     lateinit var lastName: Pref.String
@@ -31,7 +29,4 @@ object Editor {
 
     @PrefName("OBJECT")
     lateinit var iotData: Pref.Object<IotData>
-
-    @PrefName("TEST")
-    var test: Int = 56
 }

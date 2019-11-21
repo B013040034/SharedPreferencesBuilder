@@ -1,4 +1,4 @@
-package com.kingwaytek.sharepreferencebuilder.util
+package com.kingwaytek.sharepreferencesbuilder
 
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FIELD)
