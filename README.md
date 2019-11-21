@@ -1,3 +1,14 @@
+# Download
+```
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+```
+implementation 'com.github.B013040034:SharedPreferencesBuilder:0.1'
+```
 # SharedPreferencesBuilder
 Easy way to use SharePreferences
 
